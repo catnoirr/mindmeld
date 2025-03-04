@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Mind Meld",
-  description: "Mind Meld - Your Technology Partner",
+  description: "Mind Meld - Management Consulting",
 };
 
 export default function RootLayout({ children }) {
