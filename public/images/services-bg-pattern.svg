@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue abstract shapes -->
+  <path d="M-100 200C100 100 300 400 500 300S700 100 900 200S1100 400 1300 300" stroke="#3B82F6" stroke-width="100" stroke-linecap="round" stroke-opacity="0.1"/>
+  <circle cx="200" cy="600" r="150" fill="#3B82F6" fill-opacity="0.05"/>
+  <circle cx="1200" cy="400" r="200" fill="#3B82F6" fill-opacity="0.05"/>
+  
+  <!-- Orange abstract shapes -->
+  <path d="M1540 824C1340 724 1140 1024 940 924S740 724 540 824S340 1024 140 924" stroke="#F97316" stroke-width="100" stroke-linecap="round" stroke-opacity="0.1"/>
+  <circle cx="1000" cy="800" r="180" fill="#F97316" fill-opacity="0.05"/>
+  <circle cx="400" cy="200" r="160" fill="#F97316" fill-opacity="0.05"/>
+</svg> 
