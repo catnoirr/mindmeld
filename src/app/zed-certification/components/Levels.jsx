@@ -32,17 +32,14 @@ const Levels = () => {
           standards of manufacturing and environmental responsibility.
         </p>
 
-        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 mt-40">
-          {/* Dotted line connecting the cards */}
-         
-          
+        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
           {certificationLevels.map((cert, index) => (
             <div
               key={cert.level}
-              className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-lg drop-shadow-md"
+              className="flex flex-col items-center p-6 pt-20 bg-white rounded-2xl shadow-lg drop-shadow-md relative mt-16"
             >
-              <div className="w-32 h-32 relative -mt-28 mb-6 transform hover:scale-105 transition-transform duration-300 ">
-                <div className="absolute inset-0  -z-10" />
+              <div className="w-32 h-32 absolute -top-20 left-1/2 transform -translate-x-1/2 hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 -z-10" />
                 <Image
                   src={cert.image}
                   alt={`${cert.level} Certification`}
