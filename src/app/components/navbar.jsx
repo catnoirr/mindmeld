@@ -82,7 +82,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="backdrop-blur-sm bg-white/5 relative">
+      <nav className="backdrop-blur-sm bg-white relative z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
@@ -127,10 +127,10 @@ const Navbar = () => {
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 transition-colors duration-200"
               >
                 <span className="sr-only">Open main menu</span>
-                <div className="relative w-6 h-6">
+                <div className="relative w-6 h-5">
                   <span 
                     className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
-                      isMenuOpen ? 'rotate-45 translate-y-2' : '-translate-y-1.5'
+                      isMenuOpen ? 'rotate-45 translate-y-0.5' : '-translate-y-2'
                     }`}
                   />
                   <span 
@@ -140,23 +140,25 @@ const Navbar = () => {
                   />
                   <span 
                     className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
-                      isMenuOpen ? '-rotate-45 translate-y-2' : 'translate-y-1.5'
+                      isMenuOpen ? '-rotate-45 translate-y-0.5' : 'translate-y-2'
                     }`}
                   />
                 </div>
               </button>
             </div>
           </div>
+        </div>
+      </nav>
 
           {/* Mobile Navigation Popover */}
           <div 
-            className={`md:hidden fixed inset-0 z-50 ${
+        className={`md:hidden fixed inset-0 z-50 ${
               isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
             }`}
           >
             {/* Backdrop */}
             <div 
-              className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ease-in-out ${
+              className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ease-in-out ${
                 isMenuOpen ? 'opacity-100' : 'opacity-0'
               }`}
               onClick={() => setIsMenuOpen(false)}
@@ -164,14 +166,14 @@ const Navbar = () => {
             
             {/* Popover Panel */}
             <div 
-              className={`absolute top-0 right-0 h-full w-[280px] transform transition-all duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 h-full w-[280px] bg-white transform transition-all duration-300 ease-in-out ${
                 isMenuOpen 
                   ? 'translate-x-0 opacity-100 shadow-2xl' 
                   : 'translate-x-full opacity-0'
               }`}
             >
               {/* Menu Container */}
-              <div className="h-full bg-white rounded-l-2xl flex flex-col ">
+          <div className="h-full w-full flex flex-col">
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 border-b">
                   <div className="flex items-center space-x-2">
@@ -204,42 +206,9 @@ const Navbar = () => {
                     </button>
                   ))}
                 </div>
-                
-                {/* Bottom Info Section */}
-                <div className="p-4 bg-gray-50 rounded-l-2xl border-t">
-                  <div className="space-y-3">
-                    <div className="flex items-center pl-8 text-sm text-gray-600 cursor-pointer" onClick={() => router.push('/')}>
-                      <p className="text-gray-800 group-hover:text-gray-600 text-lg">Home</p>
-                    </div>
-                    <div className="flex items-center pl-8 text-sm text-gray-600 cursor-pointer" onClick={() => router.push('/about-us')}>
-                      <p className="text-gray-800 group-hover:text-gray-600 text-lg">About us</p>
-                    </div>
-                    <div className="flex items-center pl-8 text-sm text-gray-600 cursor-pointer" onClick={() => router.push('/contact-us')}>
-                      <p className="text-gray-800 group-hover:text-gray-600 text-lg">Contact us</p>
-                    </div>
-                   
-                    <div className="flex items-center pl-8 text-sm text-gray-600 cursor-pointer" onClick={() => router.push('/services')}>
-                      <p className="text-gray-800 group-hover:text-gray-600 text-lg flex items-center">
-                        Services
-                        <svg className="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                      </p>
-                    </div>
-                    <div className="flex items-center pl-8 text-sm text-gray-600 cursor-pointer" onClick={() => router.push('/workwithus')}>
-                      <p className="text-gray-800 group-hover:text-gray-600 text-lg">Work with us</p>
-                    </div>
-
-                    <div className="flex items-center pl-8 text-sm text-gray-600 cursor-pointer" onClick={() => router.push('/queries')}>
-                      <p className="text-gray-800 group-hover:text-gray-600 text-lg">Queries</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
     </header>
   );
 };
