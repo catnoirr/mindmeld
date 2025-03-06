@@ -2,9 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
-  
+  background-color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Slider custom styles */
+.slider-container {
+  position: relative;
+  padding: 0 20px;
+  margin: 0 -20px;
+}
+
+/* .slick-slide {
+  padding: 20px;
+} */
+
+
+
+/* Add spacing between slides */
+
+
+.slick-prev,
+.slick-next {
+  width: 40px !important;
+  height: 40px !important;
+  background: white !important;
+  /* border-radius: 50% !important; */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: -10px !important;
+}
+
+.slick-next {
+  right: -10px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #1a237e !important;
+  font-size: 20px !important;
+  opacity: 1 !important;
+}
+
+.slick-disabled {
+  opacity: 0.5 !important;
 }
