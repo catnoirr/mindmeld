@@ -12,7 +12,7 @@ const MofpiPage = () => {
     {
       title: 'INTEGRATED COLD CHAIN',
       description: 'Learn about cold chain infrastructure and support',
-      link: '/mofpi/integrated-cold-chain',
+      link: '/integrated-cold-chain',
     },
     {
       title: 'CREATION/EXPANSION OF FOOD PROCESSING & PRESERVATION CAPACITIES(CEFPPC)',

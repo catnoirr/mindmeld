@@ -46,11 +46,11 @@ const Navbar = () => {
           subItems: [
             {
               name: 'Central Subsidies',
-              path: '/services/govt-subsidies/central'
+              path: '/central-subsidies'
             },
             {
               name: 'State Subsidies',
-              path: '/services/govt-subsidies/state'
+              path: '/state-subsidies'
             }
           ]
         },

@@ -3,51 +3,63 @@ import React from 'react';
 const schemes = [
   {
     id: 1,
-    title: 'MINISTRY OF FOOD PROCESSING INDUSTRY (MOFPI)'
+    title: 'MINISTRY OF FOOD PROCESSING INDUSTRY (MOFPI)',
+    link: '/mofpi'
   },
   {
     id: 2,
-    title: 'AGRICULTURAL AND PROCESSED FOOD PRODUCTS EXPORT DEVELOPMENT AUTHORITY (APEDA)'
+    title: 'AGRICULTURAL AND PROCESSED FOOD PRODUCTS EXPORT DEVELOPMENT AUTHORITY (APEDA)',
+    link: '/apeda'
   },
   {
     id: 3,
-    title: 'NATIONAL BANK FOR AGRICULTURE AND RURAL DEVELOPMENT (NABARD)'
+    title: 'NATIONAL BANK FOR AGRICULTURE AND RURAL DEVELOPMENT (NABARD)',
+    link: '/nabard'
   },
   {
     id: 4,
-    title: 'NATIONAL LIVESTOCK MISSION (NLM)'
+    title: 'NATIONAL LIVESTOCK MISSION (NLM)',
+    link: '/nlm'
   },
   {
     id: 5,
-    title: 'NATIONAL HORTICULTURE BOARD (NHB)'
+    title: 'NATIONAL HORTICULTURE BOARD (NHB)',
+    link: '/nhb'
   },
   {
     id: 6,
-    title: 'NATIONAL HORTICULTURE MISSION (NHM)'
+    title: 'NATIONAL HORTICULTURE MISSION (NHM)',
+    link: '/nhm'
   },
   {
     id: 7,
-    title: 'NATIONAL SEEDS CORPORATION LIMITED (NSCL)'
+    title: 'NATIONAL SEEDS CORPORATION LIMITED (NSCL)',
+    link: '/nscl'
   },
   {
     id: 8,
-    title: "SMALL FARMER'S AGRI-BUSINESS CONSORTIUM (SFAC)"
+    title: "SMALL FARMER'S AGRI-BUSINESS CONSORTIUM (SFAC)",
+    link: '/sfac'
   },
   {
     id: 9,
-    title: 'MINISTRY OF TEXTILES'
+    title: 'MINISTRY OF TEXTILES',
+    link: '/ministry-of-textiles'
   },
   {
     id: 10,
-    title: 'MICRO SMALL MEDIUM ENTREPRENEUR (MSME)'
+    title: 'MICRO SMALL MEDIUM ENTREPRENEUR (MSME)',
+    link: '/msme'
   },
   {
     id: 11,
-    title: 'NATIONAL FISHERIES DEVELOPMENT BOARD (NFDB)'
+    title: 'NATIONAL FISHERIES DEVELOPMENT BOARD (NFDB)',
+    link: '/nfdb'
   },
   {
     id: 12,
-    title: 'MINISTRY OF NEW AND RENEWABLE ENERGY'
+    title: 'MINISTRY OF NEW AND RENEWABLE ENERGY',
+    link: '/ministry-of-new-and-renewable-energy'
   }
 ];
 
@@ -66,7 +78,7 @@ export default function CentralSubsidies() {
           {schemes.map((scheme) => (
             <a
               key={scheme.id}
-              href="#"
+              href={scheme.link}
               className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl p-6 transition-all duration-300 transform hover:-translate-y-1 border border-gray-100"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-navy-blue/5 to-navy-blue/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

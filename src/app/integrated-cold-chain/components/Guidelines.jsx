@@ -75,35 +75,32 @@ const Guidelines = () => {
   ];
 
   return (
-    <div className="p-8 md:p-8 max-w-7xl mx-auto">
-      <h1 className="text-[#1a5d1a] text-center text-2xl md:text-3xl font-semibold mb-4">
+    <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 className="text-xl font-semibold text-indigo-900 mb-6">
         Integrated Cold Chain & Value Addition Infrastructure – Central Govt (MoFPI)
-      </h1>
-      <h2 className="text-purple-800 text-center text-xl md:text-2xl mb-8">
+      </h3>
+      <h4 className="text-lg text-indigo-700 mb-8 text-center">
         Snapshot (Guidelines)
-      </h2>
+      </h4>
       
-      <div className="overflow-x-auto shadow-lg rounded-lg">
-        <table className="w-full bg-white border-collapse">
-          <thead>
-            <tr className="bg-gray-50">
-              <th className="px-4 py-4 text-left font-semibold text-gray-700 border border-gray-200">Sl No.</th>
-              <th className="px-4 py-4 text-left font-semibold text-gray-700 border border-gray-200">Particulars</th>
-              <th className="px-4 py-4 text-left font-semibold text-gray-700 border border-gray-200">Inputs</th>
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sl No.</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Particulars</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Inputs</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="bg-white divide-y divide-gray-200">
             {guidelinesData.map((item, index) => (
               <tr 
                 key={item.id}
-                className={`
-                  ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
-                  hover:bg-gray-100 transition-colors duration-150
-                `}
+                className={`${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-gray-100`}
               >
-                <td className="px-4 py-4 border border-gray-200 text-sm md:text-base">{item.id}</td>
-                <td className="px-4 py-4 border border-gray-200 text-sm md:text-base">{item.particulars}</td>
-                <td className="px-4 py-4 border border-gray-200 text-sm md:text-base">{item.inputs}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.id}</td>
+                <td className="px-6 py-4 text-sm font-medium text-gray-900">{item.particulars}</td>
+                <td className="px-6 py-4 text-sm text-gray-500">{item.inputs}</td>
               </tr>
             ))}
           </tbody>
