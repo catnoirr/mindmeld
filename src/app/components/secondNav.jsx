@@ -84,15 +84,6 @@ const Navbar = () => {
         </svg>
       ),
     },
-    {
-      name: 'Others',
-      path: '/other-services',
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-    },
   ];
 
   const handleMouseEnter = (itemName) => {
@@ -129,9 +120,26 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="border bg-white">
+    <header className=" bg-white flex justify-between py-4 lg:py-0 ">
+      <div className="flex justify-center items-center flex-shrink-0 lg:px-16 px-6">
+         {/* Logo */}
+         <div className="flex-shrink-0">
+              <button onClick={() => router.push('/')} className="flex items-center">
+                <Image src="/mindmeldlogo.png" alt="Logo" width={45} height={45} className="sm:w-[45px] sm:h-[45px]" />
+                <div className="flex flex-col items-start justify-start space-y-0">
+                <span className="ml-2 text-2xl sm:text-4xl font-semibold text-blue-800">Mind <span className="text-blue-300">Meld</span></span>
+                <p className="text-xs lg:text-base ml-2 text-gray-500">Business Consulting</p>
+                </div>
+               
+
+              </button>
+            </div>
+      </div>
+      <div className="lg:border">
+
+      
       {/* Top bar with contact info */}
-      <div className="border-b border-gray-300/30 py-5 text-sm">
+      <div className="border-b border-gray-300/30 py-5 text-sm hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-end gap-2 sm:gap-6 text-gray-700 text-xs sm:text-sm overflow-hidden">
             <span className="whitespace-nowrap">mindmeld@gmail.com</span>
@@ -145,13 +153,7 @@ const Navbar = () => {
       <nav className="backdrop-blur-sm bg-white relative z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <button onClick={() => router.push('/')} className="flex items-center">
-                <Image src="/mindmeldlogo.png" alt="Logo" width={32} height={32} className="sm:w-[40px] sm:h-[40px]" />
-                <span className="ml-2 text-lg sm:text-2xl font-semibold text-blue-800">Mind <span className="text-blue-300">Meld</span></span>
-              </button>
-            </div>
+           
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center">
@@ -288,6 +290,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      </div>
 
           {/* Mobile Navigation Popover */}
           <div 
