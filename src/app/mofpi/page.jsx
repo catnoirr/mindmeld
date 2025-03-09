@@ -22,7 +22,7 @@ const MofpiPage = () => {
     {
       title: 'AGRO PROCESSING CLUSTER',
       description: 'Find information about agro-processing clusters',
-      link: '/mofpi/agro-processing-cluster',
+      link: '/apc',
     },
     {
       title: 'SCHEME FOR CREATION OF BACKWARD AND FORWARD LINKAGES',
@@ -32,7 +32,7 @@ const MofpiPage = () => {
     {
       title: 'SETTING-UP/UP-GRADATION OF FOOD TESTING LABORATORIES',
       description: 'Learn about food testing facility development',
-      link: '/mofpi/setting-up-up-gradation-of-food-testing-laboratories',
+      link: '/ftl',
     },
     {
       title: 'HUMAN RESOURCES AND INSTITUTION',

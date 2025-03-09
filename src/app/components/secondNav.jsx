@@ -16,41 +16,26 @@ const Navbar = () => {
     {
       name: 'Home',
       path: '/',
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      ),
     },
     {
       name: 'About us',
       path: '/about',
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
     },
     {
       name: 'Services',
       path: '/services',
       hasDropdown: true,
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
       dropdownItems: [
         {
           name: 'Govt-Subsidies',
           subItems: [
             {
               name: 'Central Subsidies',
-              path: '/services/govt-subsidies/central'
+              path: '/central-subsidies'
             },
             {
               name: 'State Subsidies',
-              path: '/services/govt-subsidies/state'
+              path: '/state-subsidies'
             }
           ]
         },
@@ -69,20 +54,10 @@ const Navbar = () => {
     {
       name: 'Contact us',
       path: '/contact-us',
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
     },
     {
       name: 'Work with us',
       path: '/workwithus',
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
     },
   ];
 
@@ -120,8 +95,8 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className=" bg-white flex justify-between py-4 lg:py-0 ">
-      <div className="flex justify-center items-center flex-shrink-0 lg:px-16 px-6">
+    <header className=" bg-white flex  py-4 lg:py-0 ">
+      <div className="flex justify-center items-center flex-shrink-0 lg:px-10 px-6 ">
          {/* Logo */}
          <div className="flex-shrink-0">
               <button onClick={() => router.push('/')} className="flex items-center">
@@ -135,28 +110,35 @@ const Navbar = () => {
               </button>
             </div>
       </div>
-      <div className="lg:border">
+      <div className="lg:border w-full">
 
       
       {/* Top bar with contact info */}
       <div className="border-b border-gray-300/30 py-5 text-sm hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-end gap-2 sm:gap-6 text-gray-700 text-xs sm:text-sm overflow-hidden">
-            <span className="whitespace-nowrap">mindmeld@gmail.com</span>
+        <div className=" px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-between gap-2 sm:gap-6 text-gray-700 text-xs sm:text-sm overflow-hidden">
+            <div className="flex flex-wrap justify-between gap-2 sm:gap-6 text-gray-700 text-xs sm:text-sm overflow-hidden">
+            <span className="whitespace-nowrap">mindmeldplc@gmail.com</span>
             <span className="border-l border-gray-400/50 pl-2 sm:pl-6 whitespace-nowrap">+91887230494</span>
             <span className="border-l border-gray-400/50 pl-2 sm:pl-6 whitespace-nowrap">Mon-Sat 9am-6pm</span>
+            </div>
+            
+            <div>
+            <span className="border-l border-gray-400/50 pl-2 sm:pl-6 whitespace-nowrap">English</span>
+
+            </div>
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <nav className="backdrop-blur-sm bg-white relative z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
+      <nav className="backdrop-blur-sm  relative z-40">
+        <div className=" px-4 sm:px-6 lg:px-5 ">
+          <div className="flex justify-between h-16 items-center ">
            
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center">
+            <div className="hidden md:flex items-center ">
               <div className="flex space-x-4">
                 {menuItems.map((item, index) => (
                   <div 
@@ -173,7 +155,6 @@ const Navbar = () => {
                       }}
                       className="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-150 group"
                     >
-                      <span className="text-gray-400 group-hover:text-gray-600">{item.icon}</span>
                       <span>{item.name}</span>
                       {item.hasDropdown && (
                         <svg
@@ -248,17 +229,7 @@ const Navbar = () => {
                   </div>
                 ))}
               </div>
-              <div className="ml-8 pl-8 border-l border-gray-400/30 h-6 flex items-center">
-                <button 
-                  className="flex items-center text-gray-700 hover:text-gray-900 font-medium group"
-                  onClick={() => router.push('/queries')}
-                >
-                  <svg className="w-5 h-5 mr-2 text-gray-400 group-hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>Queries</span>
-                </button>
-              </div>
+             
             </div>
 
             {/* Mobile menu button */}
@@ -287,6 +258,15 @@ const Navbar = () => {
                 </div>
               </button>
             </div>
+            <div className="ml-8 pl-6 border-l border-gray-400/30 h-6 flex items-center">
+                <button 
+                  className="flex items-center text-gray-700 hover:text-gray-900 font-medium group"
+                  onClick={() => router.push('/queries')}
+                >
+                  
+                  <span>Queries</span>
+                </button>
+              </div>
           </div>
         </div>
       </nav>
@@ -348,7 +328,6 @@ const Navbar = () => {
                         className="flex items-center justify-between w-full px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 active:bg-gray-100 transition-colors duration-150"
                       >
                         <div className="flex items-center">
-                          {item.icon}
                           {item.name}
                         </div>
                         {item.hasDropdown && (

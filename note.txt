@@ -1,0 +1,8 @@
+font-family: Arial, Helvetica, sans-serif;
+Specifies a prioritized list of font family names or generic family names. A user agent iterates through the list of family names until it matches an available font that contains a glyph for the character to be rendered.
+
+(Edge 12, Firefox 1, Safari 1, Chrome 1, IE 3, Opera 3)
+
+Syntax: <family-name>
+
+MDN Reference
