@@ -4,17 +4,17 @@ const teamMembers = [
   {
     name: 'Navdeep Bansal',
     image: '/m2.png',
-    role: '',
+    role: 'Director',
   },
   {
     name: 'Anshuman Goyal',
     image: '/m1.png',
-    role: '',
+    role: 'Director',
   },
   {
     name: ' Ria Goyal ',
     image: '/m3.png',
-    role: '',
+    role: 'Ceo Audit & Finance',
   },
 ];
 

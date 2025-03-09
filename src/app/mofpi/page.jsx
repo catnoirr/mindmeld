@@ -17,7 +17,7 @@ const MofpiPage = () => {
     {
       title: 'CREATION/EXPANSION OF FOOD PROCESSING & PRESERVATION CAPACITIES(CEFPPC)',
       description: 'Discover opportunities for food processing capacity enhancement',
-      link: '/mofpi/creation-expansion-of-food-processing-preservation-capacities',
+      link: '/creation-expansion-of-food-processing-preservation-capacity-scheme',
     },
     {
       title: 'AGRO PROCESSING CLUSTER',
@@ -27,7 +27,7 @@ const MofpiPage = () => {
     {
       title: 'SCHEME FOR CREATION OF BACKWARD AND FORWARD LINKAGES',
       description: 'Explore supply chain integration schemes',
-      link: '/mofpi/scheme-for-creation-of-backward-and-forward-linkages',
+      link: '/scbfi',
     },
     {
       title: 'SETTING-UP/UP-GRADATION OF FOOD TESTING LABORATORIES',
