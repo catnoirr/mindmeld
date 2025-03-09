@@ -73,9 +73,8 @@ export default function WorkWithUs() {
                   <h3 className="font-semibold">Visit Us</h3>
                   <p className="text-gray-600">Come say hello at our office</p>
                   <p className="font-semibold">
-                    Piru Banda, Purani sabzi mandi,<br />
-                    Salem Tabri,Ludhiana, Punjab,<br />
-                    141008
+                  Mindmeld Management Consulting Private Limited
+                  Old GT Road, Near Jalandhar Byepass, Opposite Old Sabzi Mandi, Ludhiana, Punjab, 141001
                   </p>
                 </div>
               </div>

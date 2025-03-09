@@ -22,64 +22,68 @@ const Footer = () => {
             </p>
             <p className="flex items-center text-sm sm:text-base">
               <FaEnvelope className="mr-2 text-lg flex-shrink-0" />
-              <a href="mailto:Mindmeld@gmail.Com" className="hover:text-gray-200">Mindmeld@gmail.Com</a>
+              <a href="mailto:Mindmeld@gmail.Com" className="hover:text-gray-200">Mindmeldplc@gmail.com</a>
             </p>
             <p className="flex items-start text-sm sm:text-base">
               <FaMapMarkerAlt className="mr-2 text-lg mt-1 flex-shrink-0" />
-              <span className="break-words">Office Of Priwani Brand, Plot, Sarna, Kujal 140516 INDIA, Sector 82, Mohali, Sahibzada, Punjab, 140516</span>
+              <span className="break-words">Mindmeld Management Consulting Private Limited
+              Old GT Road, Near Jalandhar Byepass, Opposite Old Sabzi Mandi, Ludhiana, Punjab, 141001</span>
             </p>
           </div>
         </div>
 
         {/* Links Section */}
         <div className="space-y-4">
-          <h3 className="text-xl sm:text-xl font-semibold mb-3 sm:mb-4">Links</h3>
+          <h3 className="text-xl sm:text-xl font-semibold mb-3 sm:mb-4">Quick Links</h3>
           <ul className="space-y-2 sm:space-y-3 text-base sm:text-base">
             <li>
-              <Link href="/faqs" className="hover:text-gray-200 cursor-pointer">
-                FAQs
+              <Link href="/" className="hover:text-gray-200 cursor-pointer">
+                Home
               </Link>
             </li>
             <li>
-              <Link href="/about-us" className="hover:text-gray-200 cursor-pointer">
-                About Us
-              </Link>
+              <div >
+                Services
+              </div>
+              <ul className="ml-4 mt-2 space-y-2">
+               
+                <li>
+                  <Link href="/zed-certification" className="hover:text-gray-200 cursor-pointer">
+                    MSME Sustainable (ZED) Certification
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/central-subsidies" className="hover:text-gray-200 cursor-pointer">
+                    Government Subsidies and Grant
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="/contact-us" className="hover:text-gray-200 cursor-pointer">
-                Contact Us
+                Contact
               </Link>
             </li>
             <li>
-              <Link href="/work-with-us" className="hover:text-gray-200 cursor-pointer">
-                Work With Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="hover:text-gray-200 cursor-pointer">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/certification" className="hover:text-gray-200 cursor-pointer">
-                Certification
+              <Link href="/about" className="hover:text-gray-200 cursor-pointer">
+                About
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Investment Disclosure Section */}
+        {/* Company Info Section */}
         <div className="space-y-4">
-          <h3 className="text-xl sm:text-xl font-semibold mb-3 sm:mb-4">Investment Disclosure</h3>
+          <h3 className="text-xl sm:text-xl font-semibold mb-3 sm:mb-4">Mind Meld Consulting</h3>
           <p className="text-sm sm:text-base leading-relaxed">
-            You are more than a number; you are a partner. As a partner with us, you can access opportunities usually reserved only for the largest institutional investors. You can expect to benefit from our deep experience and results. You can access real estate investment opportunities designed with you in mind.
+            Mindmeld Management Consulting offers expert financial and consulting services, including virtual CFO, accounting, and bookkeeping for offshore clients, regulatory clearances, and startup support. Specializing in tax, GST, subsidies, and trusts, we help businesses thrive with tailored, efficient solutions.
           </p>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="container mx-auto px-4 mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-white/20">
-        <p className="text-center text-xs sm:text-sm">Mind Meld @ All Rights Reserved</p>
+        <p className="text-center text-xs sm:text-sm">© {new Date().getFullYear()} Mind Meld Consulting. All Rights Reserved</p>
       </div>
     </footer>
   );

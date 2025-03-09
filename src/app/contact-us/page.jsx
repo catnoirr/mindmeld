@@ -69,7 +69,7 @@ const ContactUs = () => {
                     Alternate Number: +919815081610
                   </p>
                   <p className="text-lg text-gray-600">
-                    Available: Monday to Friday,
+                    Available: Monday to Saturday,
                   </p>
                   <p className="text-lg text-gray-600">9:00 AM — 6:00 PM IST</p>
                 </div>
@@ -123,14 +123,10 @@ const ContactUs = () => {
                 <div>
                   <p className="font-medium text-lg">Office Address:</p>
                   <p className="text-lg text-gray-600">
-                    Office of Parveen Bansal, Piru
+                    Mindmeld Management Consulting Private Limited
+                    Old GT Road, Near Jalandhar Byepass, Opposite Old Sabzi Mandi, Ludhiana, Punjab, 141001
                   </p>
-                  <p className="text-lg text-gray-600">
-                    Banda, Purani sabzi mendi, Salem
-                  </p>
-                  <p className="text-lg text-gray-600">
-                    Tabri, Ludhiana, Punjab, 141008
-                  </p>
+                  
                 </div>
               </div>
             </div>

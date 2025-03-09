@@ -134,7 +134,7 @@ const Navbar = () => {
       <div className="border-b border-gray-300/30 py-5 text-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-end gap-2 sm:gap-6 text-gray-700 text-xs sm:text-sm overflow-hidden">
-            <span className="whitespace-nowrap">mindmeld@gmail.com</span>
+            <span className="whitespace-nowrap">mindmeldplc@gmail.com</span>
             <span className="border-l border-gray-400/50 pl-2 sm:pl-6 whitespace-nowrap">+91887230494</span>
             <span className="border-l border-gray-400/50 pl-2 sm:pl-6 whitespace-nowrap">Mon-Sat 9am-6pm</span>
           </div>
