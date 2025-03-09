@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const certificationLevels = [
   {
@@ -60,12 +61,12 @@ const Levels = () => {
 
         {/* Scroll Down Indicator */}
         <div className="flex flex-col items-center mt-20 ">
-            <div className="flex items-center justify-center px-6 py-3 rounded-full cursor-pointer mb-3 bg-gradient-to-r from-[#1B3B5C] to-[#0A2942] text-white hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 gap-2">
+            <Link href="/zed-certification/financial" className="flex items-center justify-center px-6 py-3 rounded-full cursor-pointer mb-3 bg-gradient-to-r from-[#1B3B5C] to-[#0A2942] text-white hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 gap-2">
               Know More
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </div>
+            </Link>
           <div className="w-8 h-12 border-2 border-gray-700 rounded-full relative">
             <div className="w-2 h-2 bg-gray-700 rounded-full absolute left-1/2 top-2 transform -translate-x-1/2 animate-bounce" />
           </div>
