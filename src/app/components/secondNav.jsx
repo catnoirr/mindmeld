@@ -95,15 +95,22 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className=" bg-white flex  py-4 lg:py-0 ">
-      <div className="flex justify-center items-center flex-shrink-0 lg:px-10 px-6 ">
+    <header className=" bg-white flex  py-4 lg:py-0 overflow-hidden ">
+      <div className="flex justify-center items-center flex-shrink-0 lg:px-10 px-4 ">
          {/* Logo */}
          <div className="flex-shrink-0">
               <button onClick={() => router.push('/')} className="flex items-center">
-                <Image src="/mindmeldlogo.png" alt="Logo" width={45} height={45} className="sm:w-[45px] sm:h-[45px]" />
+                <Image 
+                  src="/mindmeldlogo.png" 
+                  alt="Mind Meld Logo"
+                  width={45} 
+                  height={45} 
+                  className="w-[45px] h-[45px] sm:w-[50px] sm:h-[45px] object-contain transition-transform hover:scale-105"
+                  priority
+                />
                 <div className="flex flex-col items-start justify-start space-y-0">
-                <span className="ml-2 text-2xl sm:text-4xl font-semibold text-blue-800">Mind <span className="text-blue-300">Meld</span></span>
-                <p className="text-xs lg:text-base ml-2 text-gray-500">Business Consulting</p>
+                <span className="ml-2 text-xl sm:text-2xl font-semibold text-blue-800">Mind <span className="text-blue-300">Meld</span></span>
+                <p className="text-xs ml-2 text-gray-500">Business Consulting</p>
                 </div>
                
 
@@ -134,7 +141,7 @@ const Navbar = () => {
       {/* Main Navigation */}
       <nav className="backdrop-blur-sm  relative z-40">
         <div className=" px-4 sm:px-6 lg:px-5 ">
-          <div className="flex justify-between h-16 items-center ">
+          <div className="flex justify-end lg:justify-start h-16 items-center   border-red-700 ">
            
 
             {/* Desktop Navigation */}
@@ -258,7 +265,7 @@ const Navbar = () => {
                 </div>
               </button>
             </div>
-            <div className="ml-8 pl-6 border-l border-gray-400/30 h-6 flex items-center">
+            {/* <div className="ml-8 pl-6 border-l border-gray-400/30 h-6  items-center hidden md:flex">
                 <button 
                   className="flex items-center text-gray-700 hover:text-gray-900 font-medium group"
                   onClick={() => router.push('/queries')}
@@ -266,7 +273,7 @@ const Navbar = () => {
                   
                   <span>Queries</span>
                 </button>
-              </div>
+              </div> */}
           </div>
         </div>
       </nav>
