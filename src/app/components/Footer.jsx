@@ -57,7 +57,17 @@ const Footer = () => {
                     Government Subsidies and Grant
                   </Link>
                 </li>
+                <li>
+                  <Link href="/income-tax-regulatory-compliances" className="hover:text-gray-200 cursor-pointer">
+                  Income Tax Regulatory Compliances
+                  </Link>
+                </li>
               </ul>
+            </li>
+            <li>
+            <Link href="/other-services" className="hover:text-gray-200 cursor-pointer">
+                    Other Sevices
+                  </Link>
             </li>
             <li>
               <Link href="/contact-us" className="hover:text-gray-200 cursor-pointer">

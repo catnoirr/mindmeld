@@ -40,7 +40,7 @@ const OtherServices = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-6 hover:shadow-xl transition-all duration-300 relative z-0"
+              className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-6 hover:shadow-xl transition-all duration-300 relative z-0"
             >
               <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
               <p className="text-gray-600 leading-relaxed">{service.description}</p>

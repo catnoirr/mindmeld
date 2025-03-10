@@ -28,14 +28,18 @@ const Hero = () => {
 
             <div className="flex items-center gap-4">
               <div className="flex -space-x-2">
-                {[1, 2, 3].map((index) => (
+                {[
+                  '/associate1.jpg',
+                  '/associate2.jpg', 
+                  '/associate3.jpg'
+                ].map((imgSrc, index) => (
                   <div
                     key={index}
                     className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden"
                   >
                     <Image
-                      src={'/hero-image.png'}
-                      alt={`Associate ${index}`}
+                      src={imgSrc}
+                      alt={`Associate ${index + 1}`}
                       width={40}
                       height={40}
                       className="w-full h-full object-cover"

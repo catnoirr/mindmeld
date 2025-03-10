@@ -60,7 +60,7 @@ const Features = () => {
       {/* Main Card */}
       <div className="relative">
         {/* Header */}
-        <h2 className="text-4xl lg:text-5xl lg:max-w-3xl font-medium text-gray-900 mb-8 leading-tight">
+        <h2 className="text-4xl lg:text-54xl lg:max-w-3xl font-medium text-gray-900 mb-8 leading-tight">
           Everything about the business  world in one place
         </h2>
 
