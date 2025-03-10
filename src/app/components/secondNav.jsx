@@ -95,7 +95,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className=" bg-white flex  py-4 lg:py-0 overflow-hidden ">
+    <header className=" bg-white flex  py-4 lg:py-0  ">
       <div className="flex justify-center items-center flex-shrink-0 lg:px-10 px-4 ">
          {/* Logo */}
          <div className="flex-shrink-0">
