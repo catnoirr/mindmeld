@@ -47,7 +47,7 @@ export default function WorkWithUs() {
                 <div className="p-3 border-2 rounded-xl w-12 h-12">
                   <FaPhone className=" text-xl" />
                 </div>
-                <div>
+                <div className='text-gray-800'>
                   <h3 className="font-semibold">Call Us</h3>
                   <p className="text-gray-600">Mon-Fri from 8am to 5pm</p>
                   <a href="tel:+918872304094" className="font-semibold">+918872304094</a>
@@ -58,7 +58,7 @@ export default function WorkWithUs() {
                 <div className="p-3 border-2 rounded-xl  w-12 h-12">
                   <FaEnvelope className=" text-xl" />
                 </div>
-                <div>
+                <div className='text-gray-800'>
                   <h3 className="font-semibold">Chat to us</h3>
                   <p className="text-gray-600">Our team is here to help</p>
                   <a href="mailto:mindmeldplc@gmail.com" className="font-semibold">mindmeldplc@gmail.com</a>
@@ -69,7 +69,7 @@ export default function WorkWithUs() {
                 <div className="p-3 border-2 rounded-xl  w-12 h-12">
                   <FaMapMarkerAlt className=" text-xl" />
                 </div>
-                <div>
+                <div className='text-gray-800'>
                   <h3 className="font-semibold">Visit Us</h3>
                   <p className="text-gray-600">Come say hello at our office</p>
                   <p className="font-semibold">

@@ -18,8 +18,8 @@ const slides = [
     image: '/hero6.jpg',
     heading: 'Innovative Ideas',
     title: 'Marketing Plans',
-    buttonText: 'Learn More',
-    buttonLink: '/services'
+    buttonText: 'Get Started',
+    buttonLink: '/contact-us'
   },
   {
     id: 3,
@@ -27,8 +27,8 @@ const slides = [
     
     heading: 'Real Professionals',
     title: 'Field Expertise',
-    buttonText: 'Explore Now',
-    buttonLink: '/about'
+    buttonText: 'Get Started',
+    buttonLink: '/contact-us'
   }
 ];
 
@@ -80,33 +80,39 @@ const HomeHero = () => {
           <div className="relative z-10 h-full flex items-center">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
               <div className="max-w-2xl  mt-20">
-                <motion.h2 
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  className="text-xl font-medium text-white leading-tight mb-2"
-                >
-                  {slides[currentSlide].heading}
-                </motion.h2>
-                <motion.h1 
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-                >
-                  {slides[currentSlide].title}
-                </motion.h1>
                 <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.7 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
                 >
-                  <Link 
-                    href={slides[currentSlide].buttonLink}
-                    className="inline-flex items-center px-8 py-4 text-base font-medium text-white border border-white rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+                  <motion.h2 
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="text-xl font-medium text-white leading-tight mb-2"
                   >
-                    {slides[currentSlide].buttonText}
-                  </Link>
+                    {slides[currentSlide].heading}
+                  </motion.h2>
+                  <motion.h1 
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+                  >
+                    {slides[currentSlide].title}
+                  </motion.h1>
+                  <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 1 }}
+                  >
+                    <Link 
+                      href={slides[currentSlide].buttonLink}
+                      className="inline-flex items-center px-8 py-4 text-base font-medium text-white border border-white rounded-lg transition hover:bg-white hover:text-black duration-300 ease-in-out transform hover:scale-105"
+                    >
+                      {slides[currentSlide].buttonText}
+                    </Link>
+                  </motion.div>
                 </motion.div>
               </div>
             </div>
